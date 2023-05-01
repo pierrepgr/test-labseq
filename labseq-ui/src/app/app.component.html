@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="panel" [formGroup]="form">
+    <input type="number" class="number" formControlName="number">
+    <button class="btn" type="button" (click)="calculate()">Calculate</button>  
+  </div>
+  <div class="result" *ngIf="result.length !== 0">
+    <span class="value">{{ result }}</span>
+  </div>
+</div>
